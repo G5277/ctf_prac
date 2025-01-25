@@ -69,4 +69,17 @@ elif menu == "Contact Us":
         For any queries, reach out to us:
 
         Discord ;)
-        """)
+    """)
+
+audio_file_path = "audio.wav" 
+with open(audio_file_path, "rb") as audio_file:
+    audio_bytes = audio_file.read()
+
+st.audio(audio_bytes, format="audio/wav", start_time=0)
+
+st.download_button(
+    label="Download Audio",
+    data=audio_bytes,
+    file_name="audio.wav",  
+    mime="audio/wav"  
+)
