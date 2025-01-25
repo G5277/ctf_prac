@@ -15,25 +15,6 @@ leaderboard_data = {
     "Last Submission": ["2025-01-01 12:30"]
 }
 leaderboard_df = pd.DataFrame(leaderboard_data)
-
-import streamlit as st
-import pandas as pd
-from datetime import datetime
-
-# Title and Header
-st.title("Capture the Flag (CTF) Platform")
-
-# Sidebar for navigation
-menu = st.sidebar.selectbox("Navigate", ["Home", "Challenges", "Submit Flag", "Leaderboard", "Contact Us"])
-
-# Dummy data for leaderboard
-leaderboard_data = {
-    "Name": ["Alice", "Bob", "Charlie"],
-    "Score": [150, 100, 50],
-    "Last Submission": ["2025-01-01 12:30", "2025-01-01 12:00", "2025-01-01 11:45"]
-}
-leaderboard_df = pd.DataFrame(leaderboard_data)
-
 if menu == "Home":
     st.subheader("About the Event")
     st.write("""
