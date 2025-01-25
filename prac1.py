@@ -22,7 +22,6 @@ from datetime import datetime
 
 # Title and Header
 st.title("Capture the Flag (CTF) Platform")
-st.header("Welcome to the Ultimate CTF Challenge")
 
 # Sidebar for navigation
 menu = st.sidebar.selectbox("Navigate", ["Home", "Challenges", "Submit Flag", "Leaderboard", "Contact Us"])
